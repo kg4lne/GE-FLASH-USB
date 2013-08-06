@@ -1,0 +1,41 @@
+[Eagle]
+Version="06 04 00"
+Platform="Windows"
+Serial="612617248B-LSR-WLM-3CP"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Eagle/lbr_user/atmel-avr.lbr"
+UsedLibrary="C:/Eagle/lbr_user/con-cuistack.lbr"
+UsedLibrary="C:/Eagle/lbr_user/con-subd.lbr"
+UsedLibrary="C:/Eagle/lbr_user/con-usb.lbr"
+UsedLibrary="C:/Eagle/lbr_user/crystal.lbr"
+UsedLibrary="C:/Eagle/lbr_user/custom.lbr"
+UsedLibrary="C:/Eagle/lbr_user/dfiducial.lbr"
+UsedLibrary="C:/Eagle/lbr_user/dicons.lbr"
+UsedLibrary="C:/Eagle/lbr_user/diode.lbr"
+UsedLibrary="C:/Eagle/lbr_user/dpcb-feature.lbr"
+UsedLibrary="C:/Eagle/lbr_user/fuse.lbr"
+UsedLibrary="C:/Eagle/lbr_user/jumper.lbr"
+UsedLibrary="C:/Eagle/lbr_user/led.lbr"
+UsedLibrary="C:/Eagle/lbr_user/maxim.lbr"
+UsedLibrary="C:/Eagle/lbr_user/rc-master.lbr"
+UsedLibrary="C:/Eagle/lbr_user/rectifier.lbr"
+UsedLibrary="C:/Eagle/lbr_user/resistor-array.lbr"
+UsedLibrary="C:/Eagle/lbr_user/switch-omron.lbr"
+UsedLibrary="C:/Eagle/lbr_user/transistor-fet.lbr"
+UsedLibrary="C:/Eagle/lbr_user/transistor-npn.lbr"
+UsedLibrary="C:/Eagle/lbr_user/v-reg.lbr"
+UsedLibrary="C:/Eagle/lbr_user/zetex.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="229 27 1404 586"
+State=2
+Number=0
+
+[Desktop]
+Screen="1920 1200"
+Window="Win_1"

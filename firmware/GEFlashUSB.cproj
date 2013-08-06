@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>25c44c7d-6279-4c9b-b78f-6a7639b010fd</ProjectGuid>
+    <Name>GEFlashUSB</Name>
+    <avrdevice>at90usb1286</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <AvrProjectType>Importer</AvrProjectType>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>GEFlashUSBf</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <avrtool>com.atmel.avrdbg.tool.jtagicemkii</avrtool>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.9.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <com_atmel_avrdbg_tool_jtagicemkii>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagicemkii</ToolType>
+      <ToolNumber>00B00000157A</ToolNumber>
+      <ToolName>JTAGICE mkII</ToolName>
+    </com_atmel_avrdbg_tool_jtagicemkii>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'default' ">
+    <OutputPath>bin\default\</OutputPath>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>F_CPU=8000000UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>..\..\conf</Value>
+            <Value>..\..\..\..</Value>
+            <Value>..\..\..\..\common</Value>
+            <Value>..\..</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>true</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.compiler.warnings.AllWarnings>true</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-gdwarf-2 -fsigned-char</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-Wall -gdwarf-2    -ffunction-sections    -DF_CPU=8000000UL -Os -fsigned-char</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>..\..\conf</Value>
+            <Value>..\..\..\..</Value>
+            <Value>..\..\..\..\common</Value>
+            <Value>..\..</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+  <ItemGroup>
+    <Compile Include="compiler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="conf_scheduler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="conf_usb.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="scheduler.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi_drv.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="programmer_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_commun.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_commun_ms.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_descriptors.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_device_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_specific_request.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_standard_request.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="async.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="usb_ge_flash.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="rs232_task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="scheduler.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="usb_descriptors.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="usb_device_task.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="usb_specific_request.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="usb_standard_request.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="usb_task.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Folder Include="lib_mcu" />
+    <Folder Include="lib_mcu\power" />
+    <Compile Include="lib_mcu\power\power_drv.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Folder Include="lib_mcu\usb" />
+    <Compile Include="lib_mcu\usb\usb_drv.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Folder Include="lib_mcu\wdt" />
+    <Compile Include="lib_mcu\wdt\wdt_drv.c">
+      <SubType>compile</SubType>
+      <CustomCompilationSetting Condition="'$(Configuration)' == 'default'">
+      </CustomCompilationSetting>
+    </Compile>
+    <Compile Include="programmer_task.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="async.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="rs232_task.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

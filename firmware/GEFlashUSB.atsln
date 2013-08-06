@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "GEFlashUSB", "GEFlashUSB.cproj", "{25C44C7D-6279-4C9B-B78F-6A7639B010FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		default|AVR = default|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25C44C7D-6279-4C9B-B78F-6A7639B010FD}.default|AVR.ActiveCfg = default|AVR
+		{25C44C7D-6279-4C9B-B78F-6A7639B010FD}.default|AVR.Build.0 = default|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
