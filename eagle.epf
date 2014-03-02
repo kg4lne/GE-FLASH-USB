@@ -1,5 +1,5 @@
 [Eagle]
-Version="06 04 00"
+Version="06 05 00"
 Platform="Windows"
 Serial="612617248B-LSR-WLM-3CP"
 Globals="Globals"
@@ -32,7 +32,7 @@ UsedLibrary="C:/Eagle/lbr_user/zetex.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="229 27 1404 586"
+Loc="279 71 1454 630"
 State=2
 Number=0
 
